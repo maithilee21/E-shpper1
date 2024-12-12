@@ -1,0 +1,824 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- model box start-->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- model box end -->
+
+  <!-- logonav -->
+  <div class="container logonav">
+    <div class="row">
+      <div class="col-xl-6">
+        <div class="row">
+          <img src="image/logo.png" class="img-fluid logo" alt="">
+          <select name="country" id="country" class="country">
+            <option value="1">USA</option>
+            <option value="2">India</option>
+            <option value="3">Canada</option>
+          </select>
+          <select name="cur" id="cur" class="cur">
+            <option value="1">Dollars</option>
+            <option value="2">Rupee</option>
+            <option value="3">Candian Dollar</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-xl-6">
+        <ul class="nav-ul">
+          <li class="nav-li"><a href="#"><i class="fa-solid fa-user pe-1"></i>Account</a></li>
+          <li class="nav-li"><a href="#"><i class="fa-solid fa-star pe-1"></i>Wishlist</a></li>
+          <li class="nav-li"><a href="#"><i class="fa-solid fa-crosshairs pe-1"></i>Checout</a></li>
+          <li class="nav-li"><a href="#"><i class="fa-solid fa-cart-shopping pe-1"></i>Cart</a></li>
+          <li class="nav-li"><a href="#"><i class="fa-solid fa-lock pe-1"></i>Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- logo nav -->
+
+  <!-- nav start -->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-white">
+      <div class="container-fluid ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Shop
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Products</a></li>
+                <li><a class="dropdown-item" href="#">Product Details</a></li>
+                <li><a class="dropdown-item" href="#">Checkout</a></li>
+                <li><a class="dropdown-item" href="#">Cart</a></li>
+                <li><a class="dropdown-item" href="#">Login</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Blog
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Blog list</a></li>
+                <li><a class="dropdown-item" href="#">Blog single</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">404</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- nav end -->
+
+  <!-- silder top start -->
+  <div class="container ">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active round"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"
+          class="round"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"
+          class="round"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-xl-7 col-">
+              <h1 class="text-uppercase padding-left padding-top display-5  ms-5 gray"><span
+                  class="yellow">e</span>-shopper</h1>
+              <h2 class="padding-left ms-5 mt-1 media-h2"><b>100% &nbsp;Responsive Design</b></h2>
+              <p class="ms-5 padding-left pe-4 me-2 gray media-p ">Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Aut voluptates perferendis architecto ipsa blanditiis neque.</p>
+              <button type="button" class="btn1">Get Now</button>
+            </div>
+            <figure class="col-xl-5 col-">
+              <img src="image/girl1.jpg" alt="" class=" img-fluid relative">
+              <img src="image/pricing.png" alt="" class="absolute">
+            </figure>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-xl-7 col-">
+              <h1 class="text-uppercase padding-left padding-top display-5  ms-5 gray"><span
+                  class="yellow">e</span>-shopper</h1>
+              <h2 class="padding-left ms-5 mt-1 media-h2"><b>100% &nbsp;Responsive Design</b></h2>
+              <p class="ms-5 padding-left pe-4 me-2 gray media-p ">Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Aut voluptates perferendis architecto ipsa blanditiis neque.</p>
+              <button type="button" class="btn1">Get Now</button>
+            </div>
+            <figure class="col-xl-5 col- image">
+              <img src="image/girl2.jpg" alt="" class=" img-fluid relative">
+              <img src="image/pricing.png" alt="" class="absolute">
+            </figure>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="row">
+              <div class="col-xl-7 col-">
+                <h1 class="text-uppercase padding-left padding-top display-5  ms-5 gray"><span
+                    class="yellow">e</span>-shopper</h1>
+                <h2 class="padding-left ms-5 mt-1 media-h2"><b>100% &nbsp;Responsive Design</b></h2>
+                <p class="ms-5 padding-left pe-4 me-2 gray media-p ">Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit. Aut voluptates perferendis architecto ipsa blanditiis neque.</p>
+                <button type="button" class="btn1">Get Now</button>
+              </div>
+              <figure class="col-xl-5 col- image">
+                <img src="image/girl3.jpg" alt="" class=" img-fluid relative">
+
+                <img src="image/pricing.png" alt="" class="absolute">
+              </figure>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- silder top end -->
+
+  <!--main start -->
+  <div class="container mt-4 ">
+    <div class="row">
+      <div class="col-xl-3">
+        <h1 class="head"><span class="yellow bg-white">CATEGORY</span></h1>
+        <div class="accordion accordion-flush mt-2 bg-grey" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                SPORTSWEAR<i class="fa-solid fa-plus plus"></i>
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul>
+                  <li>NIKE</li>
+                  <li>UNDER ARMOUR</li>
+                  <li>ADIDAS</li>
+                  <li>PUMA</li>
+                  <li>ASICS</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                MENS<i class="fa-solid fa-plus plus"></i>
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul>
+                  <li>FENDI</li>
+                  <li>GUESS</li>
+                  <li>VALENTINO</li>
+                  <li>DIOR</li>
+                  <li>VERSACE</li>
+                  <li>ARMANI</li>
+                  <li>PRADA</li>
+                  <li>DOLCE AND GABBANA</li>
+                  <li>CHANEL</li>
+                  <li>GUCCI</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                WOMENS <i class="fa-solid fa-plus plus"></i>
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul>
+                  <li>FENDI</li>
+                  <li>GUESS</li>
+                  <li>VALENTINO</li>
+                  <li>DIOR</li>
+                  <li>VERSACE</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapseThree">
+                KIDS 
+              </button>
+            </h2>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapseThree">
+                HOUSEHOLD 
+              </button>
+            </h2>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapsesix" aria-expanded="false" aria-controls="flush-collapseThree">
+                INTERIOUS 
+              </button>
+            </h2>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseseven" aria-expanded="false" aria-controls="flush-collapseThree">
+                CLOTHING 
+              </button>
+            </h2>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseeight" aria-expanded="false" aria-controls="flush-collapseThree">
+                BAG 
+              </button>
+            </h2>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapsenine" aria-expanded="false" aria-controls="flush-collapseThree">
+                SHOES 
+              </button>
+            </h2>
+          </div>
+        </div>
+        <!-- brand start -->
+        <h1 class="head1"><span class="yellow bg-white">BRANDS</span></h1>
+        <div class="brand">
+          <ul class="border-gray brand-ul">
+            <li><a href="#" class="brand-a">Acne</a> <span class="brand-s">(50)</span></li>
+            <li><a href="#" class="brand-a">GRÜNE ERDE</a><span class="brand-s">(56)</span></li>
+            <li><a href="#" class="brand-a">ALBIRO</a><span class="brand-s">(27)</span></li>
+            <li><a href="#" class="brand-a">RONHILL</a><span class="brand-s">(32)</span></li>
+            <li><a href="#" class="brand-a">ODDMOLLY</a><span class="brand-s">(5)</span></li>
+            <li><a href="#" class="brand-a">BOUDESTIJN</a><span class="brand-s">(9)</span></li>
+            <li><a href="#" class="brand-a">RÖSCH CREATIVE CULTURE</a><span class="brand-s">(40)</span></li>
+          </ul>
+        </div>
+        <!-- brand end -->
+        <!-- range start -->
+        <h1 class="head"><span class="yellow bg-white">PRICE RANGE</span></h1>
+        <div class="range">
+          <div class="ranage-left">0</div>
+          <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+          <div class="range-right">1000</div>
+        </div>
+        <!-- range end -->
+        <!-- shiphing start -->
+        <div class="shipping">
+          <img src="images/shipping.jpg" class="img-fluid" alt="">
+        </div>
+        <!-- shiphing end -->
+
+
+      </div>
+      <div class="col-xl-9 ps-1 pe-1">
+        <h1 class="card-head"><span class="yellow bg-white">FEATURES ITEMS</span></h1>
+        <div class="container pe-0 ps-0">
+          <div class="row card-row">
+            <div class="col-xl-4 col-12 card border-gray hover">
+              <div class="overlay">
+                <h4 class="overlay-price">$56</h4>
+                <p class="overlay-detail">Easy Polo Black Edition</p>
+                <p><button class="overlay-btn"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</button></p>
+              </div>
+              <figure>
+                <img src="image/product1.jpg" class="img-fluid card-img" alt="">
+              </figure>
+              <section>
+                <h4 class="yellow fw-bold">$56</h4>
+                <p class="card-detail">Easy Polo Black Edition</p>
+                <p><button class="card-btn"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</button></p>
+                <hr>
+                <p class="mt-0">
+                <ul class="list-style mb-0">
+                  <li class="card-left"><a href="#" class="card-left-a"><i class="fa-solid fa-plus"></i>&nbsp;Add to
+                      Wishlist</a></li>
+                  <li class="card-right">
+                    <a href="#" class="card-right-a"><i class="fa-solid fa-plus "></i>&nbsp;Add to compare</a>
+                  </li>
+                </ul>
+
+              </section>
+
+
+            </div>
+            <div class="col-xl-4 col-12 card border-gray hover">
+              <div class="overlay">
+                <h4 class="overlay-price">$56</h4>
+                <p class="overlay-detail">Easy Polo Black Edition</p>
+                <p><button class="overlay-btn"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</button></p>
+              </div>
+              <figure>
+                <img src="image/product2.jpg" class="img-fluid card-img" alt="">
+              </figure>
+              <section>
+                <h4 class="yellow fw-bold">$56</h4>
+                <p class="card-detail">Easy Polo Black Edition</p>
+                <p><button class="card-btn"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</button></p>
+                <hr>
+                <p class="mt-0">
+                <ul class="list-style mb-0">
+                  <li class="card-left"><a href="#" class="card-left-a"><i class="fa-solid fa-plus"></i>&nbsp;Add to
+                      Wishlist</a></li>
+                  <li class="card-right">
+                    <a href="#" class="card-right-a"><i class="fa-solid fa-plus "></i>&nbsp;Add to compare</a>
+                  </li>
+                </ul>
+
+              </section>
+
+
+            </div>
+            <div class="col-xl-4 col-12 card border-gray hover">
+              <div class="overlay">
+                <h4 class="overlay-price">$56</h4>
+                <p class="overlay-detail">Easy Polo Black Edition</p>
+                <p><button class="overlay-btn"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</button></p>
+              </div>
+              <figure>
+                <img src="image/product3.jpg" class="img-fluid card-img" alt="">
+              </figure>
+              <section>
+                <h4 class="yellow fw-bold">$56</h4>
+                <p class="card-detail">Easy Polo Black Edition</p>
+                <p><button class="card-btn"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</button></p>
+                <hr>
+                <p class="mt-0">
+                <ul class="list-style mb-0">
+                  <li class="card-left"><a href="#" class="card-left-a"><i class="fa-solid fa-plus"></i>&nbsp;Add to
+                      Wishlist</a></li>
+                  <li class="card-right">
+                    <a href="#" class="card-right-a"><i class="fa-solid fa-plus "></i>&nbsp;Add to compare</a>
+                  </li>
+                </ul>
+
+              </section>
+
+
+            </div>
+          </div>
+          <div class="row card-row">
+            <div class="col-xl-4 col-12 card border-gray hover">
+              <div class="overlay">
+                <h4 class="overlay-price">$56</h4>
+                <p class="overlay-detail">Easy Polo Black Edition</p>
+                <p><button class="overlay-btn"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</button></p>
+              </div>
+              <figure>
+                <img src="image/product4.jpg" class="img-fluid card-img" alt="">
+              </figure>
+              <section>
+                <h4 class="yellow fw-bold">$56</h4>
+                <p class="card-detail">Easy Polo Black Edition</p>
+                <p><button class="card-btn"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</button></p>
+                <hr>
+                <p class="mt-0">
+                <ul class="list-style mb-0">
+                  <li class="card-left"><a href="#" class="card-left-a"><i class="fa-solid fa-plus"></i>&nbsp;Add to
+                      Wishlist</a></li>
+                  <li class="card-right">
+                    <a href="#" class="card-right-a"><i class="fa-solid fa-plus "></i>&nbsp;Add to compare</a>
+                  </li>
+                </ul>
+              </section>
+            </div>
+            <div class="col-xl-4 col-12 card border-gray hover">
+              <div class="overlay">
+                <h4 class="overlay-price">$56</h4>
+                <p class="overlay-detail">Easy Polo Black Edition</p>
+                <p><button class="overlay-btn"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</button></p>
+              </div>
+              <figure>
+                <img src="image/product5.jpg" class="img-fluid card-img" alt="">
+              </figure>
+              <section>
+                <h4 class="yellow fw-bold">$56</h4>
+                <p class="card-detail">Easy Polo Black Edition</p>
+                <p><button class="card-btn"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</button></p>
+                <hr>
+                <p class="mt-0">
+                <ul class="list-style mb-0">
+                  <li class="card-left"><a href="#" class="card-left-a"><i class="fa-solid fa-plus"></i>&nbsp;Add to
+                      Wishlist</a></li>
+                  <li class="card-right">
+                    <a href="#" class="card-right-a"><i class="fa-solid fa-plus "></i>&nbsp;Add to compare</a>
+                  </li>
+                </ul>
+
+              </section>
+
+
+            </div>
+            <div class="col-xl-4 col-12 card border-gray hover">
+              <div class="overlay">
+                <h4 class="overlay-price">$56</h4>
+                <p class="overlay-detail">Easy Polo Black Edition</p>
+                <p><button class="overlay-btn"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</button></p>
+              </div>
+              <figure>
+                <img src="image/product6.jpg" class="img-fluid card-img" alt="">
+              </figure>
+              <section>
+                <h4 class="yellow fw-bold">$56</h4>
+                <p class="card-detail">Easy Polo Black Edition</p>
+                <p><button class="card-btn"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</button></p>
+                <hr>
+                <p class="mt-0">
+                <ul class="list-style mb-0">
+                  <li class="card-left"><a href="#" class="card-left-a"><i class="fa-solid fa-plus"></i>&nbsp;Add to
+                      Wishlist</a></li>
+                  <li class="card-right">
+                    <a href="#" class="card-right-a"><i class="fa-solid fa-plus "></i>&nbsp;Add to compare</a>
+                  </li>
+                </ul>
+
+              </section>
+
+
+            </div>
+          </div>
+          <!-- dark row start-->
+          <div class="row dark">
+            <ul class="dark-ul">
+              <li class="dark-li bg-yellow">SHIRT</li>
+              <li class="dark-li">T-SHIRT</li>
+              <li class="dark-li">BLAZERS</li>
+              <li class="dark-li">SUNGLASSES</li>
+              <li class="dark-li">SHOES</li>
+            </ul>
+          </div>
+          <!-- dark row end -->
+        </div>
+        <div class="container pe-0 ps-0">
+          <div class="row card-row">
+            <div class="col-xl-3 col-6 card1 border-gray">
+              <figure>
+                <img src="image/product1.jpg" class="img-fluid" alt="">
+              </figure>
+              <section>
+                <h4 class="yellow card-price">$56</h4>
+                <p class="card-detail">Easy Polo Black Edition</p>
+                <p><button class="card-btn"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</button></p>
+              </section>
+            </div>
+            <div class="col-xl-3 col-6 card1 border-gray">
+              <figure>
+                <img src="image/product2.jpg" class="img-fluid" alt="">
+              </figure>
+              <section>
+                <h4 class="yellow card-price">$56</h4>
+                <p class="card-detail">Easy Polo Black Edition</p>
+                <p><button class="card-btn"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</button></p>
+              </section>
+            </div>
+            <div class="col-xl-3 col-6  card1 border-gray">
+              <figure>
+                <img src="image/product3.jpg" class="img-fluid" alt="">
+              </figure>
+              <section>
+                <h4 class="yellow card-price">$56</h4>
+                <p class="card-detail">Easy Polo Black Edition</p>
+                <p><button class="card-btn"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</button></p>
+              </section>
+            </div>
+            <div class="col-xl-3 col-6 card1 border-gray">
+              <figure>
+                <img src="image/product4.jpg" class="img-fluid" alt="">
+              </figure>
+              <section>
+                <h4 class="yellow card-price">$56</h4>
+                <p class="card-detail">Easy Polo Black Edition</p>
+                <p><button class="card-btn"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</button></p>
+              </section>
+            </div>
+          </div>
+        </div>
+        <!-- slider start -->
+        <h1 class="card-head"><span class="yellow bg-white">RECOMMENDED ITEMS</span></h1>
+        <div class="container pe-0 ps-0 pb-0 mb-4">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-xl-4 col- card2 margin-left border-gray">
+                    <figure>
+                      <img src="image/product11.jpg" class="img-fluid" alt="">
+                    </figure>
+                    <section>
+                      <h5 class="yellow card-price fw-bold">$56</h4>
+                        <p class="card2-detail">Easy Polo Black Edition</p>
+                        <p><button class="card2-btn"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</button>
+                        </p>
+                    </section>
+                  </div>
+                  <div class="col-xl-4 col- card2 border-gray">
+                    <figure>
+                      <img src="image/product12.jpg" class="img-fluid" alt="">
+                    </figure>
+                    <section>
+                      <h5 class="yellow card-price fw-bold">$56</h4>
+                        <p class="card2-detail">Easy Polo Black Edition</p>
+                        <p><button class="card2-btn"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</button>
+                        </p>
+                    </section>
+                  </div>
+                  <div class="col-xl-4 col- card2 margin-right border-gray">
+                    <figure>
+                      <img src="image/product10.jpg" class="img-fluid" alt="">
+                    </figure>
+                    <section>
+                      <h5 class="yellow card-price fw-bold">$56</h4>
+                        <p class="card2-detail">Easy Polo Black Edition</p>
+                        <p><button class="card2-btn"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</button>
+                        </p>
+                    </section>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-xl-4 col- card2 margin-left border-gray">
+                    <figure>
+                      <img src="image/recommend1.jpg" class="img-fluid" alt="">
+                    </figure>
+                    <section>
+                      <h5 class="yellow card-price fw-bold">$56</h4>
+                        <p class="card2-detail">Easy Polo Black Edition</p>
+                        <p><button class="card2-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                              class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</button></p>
+                    </section>
+                  </div>
+                  <div class="col-xl-4 col- card2 border-gray">
+                    <figure>
+                      <img src="image/recommend2.jpg" class="img-fluid" alt="">
+                    </figure>
+                    <section>
+                      <h5 class="yellow card-price fw-bold">$56</h4>
+                        <p class="card2-detail">Easy Polo Black Edition</p>
+                        <p><button class="card2-btn"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</button>
+                        </p>
+                    </section>
+                  </div>
+                  <div class="col-xl-4 col- card2 margin-right border-gray">
+                    <figure>
+                      <img src="image/recommend3.jpg" class="img-fluid" alt="">
+                    </figure>
+                    <section>
+                      <h5 class="yellow card-price fw-bold">$56</h4>
+                        <p class="card2-detail">Easy Polo Black Edition</p>
+                        <p><button class="card2-btn"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</button>
+                        </p>
+                    </section>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-xl-4 col- card2 margin-left border-gray">
+                    <figure>
+                      <img src="image/recommend1.jpg" class="img-fluid" alt="">
+                    </figure>
+                    <section>
+                      <h5 class="yellow card-price fw-bold">$56</h4>
+                        <p class="card2-detail">Easy Polo Black Edition</p>
+                        <p><button class="card2-btn"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</button>
+                        </p>
+                    </section>
+                  </div>
+                  <div class="col-xl-4 col- card2 border-gray">
+                    <figure>
+                      <img src="image/recommend2.jpg" class="img-fluid" alt="">
+                    </figure>
+                    <section>
+                      <h5 class="yellow card-price fw-bold">$56</h4>
+                        <p class="card2-detail">Easy Polo Black Edition</p>
+                        <p><button class="card2-btn"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</button>
+                        </p>
+                    </section>
+                  </div>
+                  <div class="col-xl-4 col- card2 margin-right border-gray">
+                    <figure>
+                      <img src="image/recommend3.jpg" class="img-fluid" alt="">
+                    </figure>
+                    <section>
+                      <h5 class="yellow card-price fw-bold">$56</h4>
+                        <p class="card2-detail">Easy Polo Black Edition</p>
+                        <p><button class="card2-btn"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</button>
+                        </p>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon bg-yellow" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon bg-yellow" aria-hidden="true"></span>
+              <span class="visually-hidden bg-yellow">Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- slider end -->
+      </div>
+    </div>
+  </div>
+  <!-- main end -->
+
+  <!-- gray start -->
+  <div class="bg-gray">
+    <div class="container border-bottom">
+      <div class="row">
+        <div class="col-xl-2 pe-5">
+          <h5 class="text-uppercase mt-5"><span
+            class="yellow">e</span>-shopper</h5> 
+          <p class="text-justify">
+            Lorem ipsum dolor sit amet consectetur
+          </p> 
+        </div>
+        <div class="col-xl-7 mt-5">
+          <div class="row">
+          <div class="col-xl-3 frame col-6"><img class="img-fluid mb-1 border-yellow" src="image/iframe1.png" alt="">
+            <p class="frame-p">Circle of Hands</p>
+            <p class="frame-p">24 DEC 2014s</p>
+          </div>        
+          <div class="col-xl-3 frame col-6"><img class="img-fluid mb-1 border-yellow" src="image/iframe2.png" alt="">
+            <p class="frame-p">Circle of Hands</p>
+            <p class="frame-p">24 DEC 2014s</p>
+          </div>
+          <div class="col-xl-3 frame col-6"><img class="img-fluid mb-1 border-yellow" src="image/iframe3.png" alt="">
+            <p class="frame-p">Circle of Hands</p>
+            <p class="frame-p">24 DEC 2014s</p>
+          </div>
+          <div class="col-xl-3 frame col-6"><img class="img-fluid mb-1 border-yellow" src="image/iframe4.png" alt="">
+            <p class="frame-p">Circle of Hands</p>
+            <p class="frame-p">24 DEC 2014s</p>
+          </div>
+          </div> 
+        </div>
+        <div class="col-xl-3 mt-4 mb-4 text-center">
+          <img src="image/map.png" class="re">
+        </div>
+      </div>
+      
+    </div>
+    <div class="container group-list mt-4 pb-4">
+      <div class="row">
+        <div class="col-xl-9 ">
+          <div class="row">
+            <div class="col-xl-3 col-6 ">
+              <h6 class="group-herad">SERVICE</h6>
+              <ul class="group">
+                <li class="group-item"><a href="#">Online Help</a></li>
+                <li class="group-item"><a href="#">contact Us</a></li>
+                <li class="group-item"><a href="#">Order status</a></li>
+                <li class="group-item"><a href="#">Change Loation</a></li>
+                <li class="group-item"><a href="#">FAQ's</a></li>
+              </ul>
+            </div>
+            <div class="col-xl-3 col-6">
+              <h6 class="group-herad">QUICK SHOP</h6>
+              <ul class="group">
+                <li class="group-item"><a href="#">Tshirt</a></li>
+                <li class="group-item"><a href="#">Mens</a></li>
+                <li class="group-item"><a href="#">Womens</a></li>
+                <li class="group-item"><a href="#">Gift Card</a></li>
+                <li class="group-item"><a href="#">Shoes</a></li>
+              </ul>
+            </div>
+            <div class="col-xl-3 col-6">
+              <h6 class="group-herad">POLICIES</h6>
+              <ul class="group">
+                <li class="group-item"><a href="#">Terms of Uses</a></li>
+                <li class="group-item"><a href="#">Privecy Policy</a></li>
+                <li class="group-item"><a href="#">Refund Policy</a></li>
+                <li class="group-item"><a href="#">Biling System</a></li>
+                <li class="group-item"><a href="#">Ticket System</a></li>
+              </ul>
+            </div>
+            <div class="col-xl-3 col-6">
+              <h6 class="group-herad">ABOUT SHOPPER</h6>
+              <ul class="group">
+                <li class="group-item"><a href="#">Company Information</a></li>
+                <li class="group-item"><a href="#"></a></li>
+                <li class="group-item"><a href="#">Store Location</a></li>
+                <li class="group-item"><a href="#">Affilate program</a></li>
+                <li class="group-item"><a href="#">Copyright</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 text-center">
+          <h6 class="group-herad">ABOUT SHOPPER</h6>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          <p class="group-p">Get the most recent updates from
+            our site and be updated your self...</p>
+        </div>
+        
+       </div>
+      
+      
+      
+    </div>
+  </div>
+  <!-- gray end -->
+
+   <!-- footer start-->
+   <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6">
+          &copy;2024 logoai Design
+        </div>
+        <div class="col-xl-6 text-end">
+          Design By: <a href="#">@Maithilee Alave</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer end -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
